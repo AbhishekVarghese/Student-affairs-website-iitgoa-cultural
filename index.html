@@ -1,0 +1,427 @@
+<html>
+<head>
+ <title>IIT Goa Cultural Affairs Homepage</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+
+  <!-- Slick Library -->
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+  <link href="slick/slick/slick-theme.css" rel="stylesheet">
+
+  <link href="../navbar.css" rel="stylesheet">
+  <link href="cultural_style.css" rel="stylesheet">
+  <!-- To display Warning message the first time site opens -->
+  <script type="text/javascript"> if(localStorage.getItem("firstTime")==null){
+     alert("This website may not be supported on all browsers. Use the Latest Version of Chrome for best experience.");
+     localStorage.setItem("firstTime","done");
+  } </script>
+  <!-- Script to show the loading screen -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      $(".loader").fadeOut("slow"); });
+  </script>
+
+</head>
+
+
+<body>
+<div class="loader">
+  <div class="lds-css ng-scope">
+    <div style="width:100%;height:100%" class="lds-eclipse">
+      <div>
+      </div>
+      <img src="../logo.png"  style=" width: 65%; padding: 8%;">
+    </div>
+    <style type="text/css">
+    </style>
+  </div>
+</div>
+
+<div class="topnavcontainer">
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered" >
+    <a href="." class="active">IIT Goa &#8729 <b>CULTURALS</b></a>
+  </div>
+
+  <!-- Left-aligned links (default) -->
+
+  <a href="#" onclick="dropdowntoggle()" id="dropbtn">CLUBS  &#9780</a>
+  <a href="../st">COUNCIL</a>
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="#search">FACILITIES</a>
+    <a href="../su">CONTACTUS</a>
+  </div>
+</div>
+
+</div>
+
+
+<div id="dropdown">
+
+  <!-- Left-aligned links (default) -->
+
+  <a href="Music.html">Music Club</a>
+  <a href="Dance.html">Dance Club</a>
+  <a href="Photography.html">Photography Club</a>
+  <a href="#" onclick="literary()">Literary Club</a>
+  <a href="Dramatics.html">Dramatics Club</a>
+  <a href="Debate.html">Debate Club</a>
+  <a href="#" onclick="detective()">Detective Club</a>
+
+</div>
+
+
+
+
+<div class="slide" style="display: flex;flex-flow: column;height:100%;">
+
+  <div  class="big" style="background-image: url('img/PIC1.jpg');">
+    <div class="clubname">
+      PHOTOGRAPHY CLUB
+    </div>
+    <div class="text_container">
+      <span id="typed1"></span>
+    </div>
+    <div class="button_container" onclick="location.href = 'Photography.html';">
+      KNOW MORE
+    </div>
+  </div>
+
+  <div class="big" style="background-image: url('img/PIC2.jpg');">
+    <div class="clubname" style="color:white; font-weight: 600">
+      MUSIC CLUB
+    </div>
+    <div class="text_container">
+      <span id="typed2"></span>
+    </div>
+    <div class="button_container" onclick="location.href = 'Music.html';">
+      KNOW MORE
+    </div>
+  </div>
+
+  <div class="big" style="background-image: url('img/PIC3.jpg');">
+    <div class="clubname" style="color:white; font-weight: 600">
+      DANCE CLUB
+    </div>
+    <div class="text_container">
+      <span id="typed3"></span>
+    </div>
+    <div class="button_container" onclick="location.href = 'Dance.html';">
+      KNOW MORE
+    </div>
+  </div>
+
+  <div class="big" style="background-image: url('img/PIC4.jpg');">
+    <div class="clubname" style="color:white; font-weight: 600">
+      DRAMATICS CLUB
+    </div>
+    <div class="text_container">
+      <span id="typed4"></span>
+    </div>
+    <div class="button_container" onclick="location.href = 'Dramatics.html';">
+      KNOW MORE
+    </div>
+  </div>
+
+  <div class="big" style="background-image: url('img/PIC5.jpg');">
+    <div class="clubname" style="color:white; font-weight: 600">
+      DEBATE CLUB
+    </div>
+    <div class="text_container">
+      <span id="typed5"></span>
+    </div>
+    <div class="button_container" onclick="location.href = 'Debate.html';">
+      KNOW MORE
+    </div>
+  </div>
+
+  <div class="big" style="background-image: url('img/PIC6.jpg');">
+    <div class="clubname" style="color:white; font-weight: 600">
+      LITERARY CLUB
+    </div>
+      <div class="text_container">
+      <span id="typed6"></span>
+    </div>
+    <div class="button_container" onclick="literary()">
+      KNOW MORE
+    </div>
+  </div>
+
+  <div class="big" style="background-image: url('img/PIC7.jpg');">
+    <div class="clubname" style="color:white; font-weight: 600">
+      DETECTIVE CLUB
+    </div>
+      <div class="text_container">
+      <span id="typed7"></span>
+    </div>
+    <div class="button_container" onclick="detective()">
+      KNOW MORE
+    </div>
+  </div>
+
+
+</div>
+
+<div class="Eventspane">
+  <h1 style="background-color:rgba(19,20,24 ,0.5)"><center>EVENTS</center></h1>
+  <marquee scrollamount=3 behaviour="slide" direction="up" height="100%"">
+   <center>
+    <table class="eventstable">
+      <tr>
+        <td>Jul 30</td>
+        <td>Foundation Day</td> 
+      </tr>
+      <tr>
+        <td>Jul 31</td>
+        <td>Orientation Day</td> 
+      </tr>
+      <tr>
+        <td>Jul 31</td>
+        <td>Freshers' Introduction</td> 
+      </tr>
+      <tr><td style="border-bottom-style: hidden"></td></tr>
+      <tr>
+        <td>Aug 12</td>
+        <td>Fresco Fiesta</td> 
+      </tr>
+      <tr>
+        <td>Aug 15</td>
+        <td>Independence Day</td> 
+      </tr>
+    </table> 
+  </center>
+  </marquee>
+</div>
+
+<div class="right_button">
+  >
+</div>
+
+<div class="left_button">
+  <
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 id="modal_head">Modal Header</h2>
+    </div>
+    <div class="modal-body" id="modal_text">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3 id="modal-foot">IIT Goa Cultural Affairs</h3>
+    </div>
+  </div>
+
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var text_modal = document.getElementById("modal_text");
+var head_modal = document.getElementById("modal_head");
+var foot_modal = document.getElementById("modal_foot");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+function detective() { 
+    text_modal.innerHTML = "<center><p>Love Sherlock, Conan, Poirot and the likes?<br>IIT Goa Detective Club provides platform for all those who are interested in detective shows and novels to hone their own deduction and reasoning skills. Along with building your analytical skills, it also teaches teamwork and management. The Club organised an event based on \'Escape the Room Challenge\' which was loved by all.There\'s a lot more coming up and you are invited to be a part of it!</p></center>";
+    head_modal.innerHTML= "Detective Club";
+    modal.style.display = "block";  
+  }
+
+function literary() { 
+    text_modal.innerHTML = "<p>Literary club is one of the latest addition to the ever growing repertoire of student clubs on campus. It encourages student participation in various literary fields. As one of the 1st events, a quiz competition named \"STIMULATE\"was organized in March 2018. The event saw large participation from the student community and left everyone wanting more at the end of it. If the interest in the first event is anything to go by, this club is set to take off in the coming semesters.</p>";
+    head_modal.innerHTML= "Literary Club";
+    modal.style.display = "block";
+  }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<script>
+	var dropdown = document.getElementById("dropdown");
+	var dropbtn = document.getElementById("dropbtn");
+	var dropdownisup = true;
+	function dropdowntoggle(){
+		if (dropdownisup) {
+			dropdown.style.display = "flex";
+			dropbtn.style.backgroundColor = "#ddd";
+			dropbtn.style.color = "black";
+			dropdownisup = false;
+		}
+
+		else{
+			dropdown.style.display = "none";
+			dropbtn.style.backgroundColor = "#333";
+			dropbtn.style.color = "#f2f2f2";
+			dropdownisup = true;
+		}
+		
+	}
+</script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="lib/typed.js" type="text/javascript"></script>
+<script type="text/javascript" src="slick/slick/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  	
+
+  	 var typed_text = new Typed('#typed1', {
+          strings: ["You dont take a photo^1000 <br> You <strong>make</strong> it.^2000"],
+          typeSpeed: 50,
+          backSpeed: 10,
+          loop: false
+        });
+
+
+  	$('.slide').on('afterChange', function(event, slick, currentSlide, nextSlide){
+  		typed_text.destroy()
+  		if ( currentSlide == 0){
+  		  typed_text = new Typed('#typed1', {
+          strings: ["You dont take a photo^1000 <br> You <strong>make</strong> it.^2000"],
+          typeSpeed: 50,
+          backSpeed: 10,
+          loop: false
+        });
+
+        }
+
+
+  		if ( currentSlide == 1){
+  			typed_text = new Typed('#typed2', {
+          strings: ['If I cannot Fly^1000, let me <strong>Sing</strong>^2000'],
+          typeSpeed: 50,
+          backSpeed: 10,
+          loop: false
+        });
+        }
+
+        if ( currentSlide == 2){
+  			typed_text = new Typed('#typed3', {
+          strings: ["Find your Rhythm^1000 <br>Find your Passion^2000"],
+          typeSpeed: 50,
+          backSpeed: 10,
+          loop: false
+        });
+        }
+
+        if ( currentSlide == 3){
+  			typed_text = new Typed('#typed4', {
+          strings: ["Don't keep <strong>Calm</strong>^1000 <br>Be <strong>Dramatic</strong>^2000"],
+          typeSpeed: 50,
+          backSpeed: 10,
+          loop: false
+        });
+        }
+
+        if ( currentSlide == 4){
+  			typed_text = new Typed('#typed5', {
+          strings: ["Don't raise your voice^1000 <br>Improve your argument^2000"],
+          typeSpeed: 50,
+          backSpeed: 10,
+          loop: false
+        });
+        }
+
+        if ( currentSlide == 5){
+  			typed_text = new Typed('#typed6', {
+          strings: ["Read your <strong>Dreams</strong>^2000"],
+          typeSpeed: 50,
+          backSpeed: 10,
+          loop: false
+        });
+        }
+
+        if ( currentSlide == 6){
+  			typed_text = new Typed('#typed7', {
+          strings: ['"What the detective story is about is not murder^500 <br>But the restoration of order.^2000"'],
+          typeSpeed: 20,
+          backSpeed: 10,
+          loop: false
+        });
+        }
+  		 
+});
+
+      $('.slide').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      cssEase: 'linear',
+      prevArrow: $('.left_button'),
+      nextArrow: $('.right_button')
+    });
+  });
+</script>
+	
+<script>
+      function show_button() {
+    	$('.button_container').fadeIn("slow");
+	}
+</script>
+<style type="text/css">
+        .typed-cursor{
+          opacity: 1;
+        }
+        .typed-cursor.typed-cursor--blink{
+          animation: typedjsBlink 0.7s infinite;
+          -webkit-animation: typedjsBlink 0.7s infinite;
+                  animation: typedjsBlink 0.7s infinite;
+        }
+        @keyframes typedjsBlink{
+          50% { opacity: 0.0; }
+        }
+        @-webkit-keyframes typedjsBlink{
+          0% { opacity: 1; }
+          50% { opacity: 0.0; }
+          100% { opacity: 1; }
+        }
+
+        .typed-fade-out{
+          opacity: 0;
+          transition: opacity .25s;
+        }
+        .typed-cursor.typed-cursor--blink.typed-fade-out{
+          -webkit-animation: 0;
+          animation: 0;
+        }
+</style>
+
+</body>
+</html>

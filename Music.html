@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+<link href="subpages_style.css" rel="stylesheet">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      $(".loader").fadeOut("slow"); });
+  </script>
+
+</head>
+<body>
+<div class="loader">
+  <div class="lds-css ng-scope">
+    <div style="width:100%;height:100%" class="lds-eclipse">
+      <div>
+      </div>
+      <img src="../logo.png"  style=" width: 65%; padding: 8%;">
+    </div>
+    <style type="text/css">
+    </style>
+  </div>
+</div>
+
+<div style="width: 100%;position: relative;">
+<video autoplay muted loop id="myVideo">
+  <source src="vid/music.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div class="wrapper">
+</div>
+</div>
+
+
+<div class="topnavcontainer">
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered" >
+    <a href="." class="active">IIT Goa &#8729 <b>CULTURALS</b></a>
+  </div>
+
+  <!-- Left-aligned links (default) -->
+
+  <a href="#" onclick="dropdowntoggle()" id="dropbtn">CLUBS  &#9780</a>
+  <a href="../st">COUNCILS</a>
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="#search">FACILITIES</a>
+    <a href="#about">CONTACTUS</a>
+  </div>
+</div>
+
+</div>
+
+
+<div id="dropdown">
+
+  <!-- Left-aligned links (default) -->
+
+  <a href="Music.html">Music Club</a>
+  <a href="Dance.html">Dance Club</a>
+  <a href="Photography.html">Photography Club</a>
+  <a href="#">Literary Club</a>
+  <a href="Dramatics.html">Dramatics Club</a>
+  <a href="Debate.html">Debate Club</a>
+  <a href="#">Detective Club</a>
+
+</div>
+
+<center>
+<div class="clubname">
+  Music Club
+</div>
+</center>
+
+
+<center>
+<div class="content"><center>
+  <!-- <h1 style="font-family: 'Lato'"><img src="logo.png" width><u>Dance Club IIT Goa</u></h1> -->
+  <p style="width:60%;font-family: 'Montserrat'; ">"Music gives a soul to the universe, wings to the minds, flights to the imagination and life to everything" and IIT Goa music club truly epitomizes that. The club is studded with fantastic musicians including singers, guitarists, keyboard players etc. We have a proper soundproof music room on campus and ever-growing ensemble of musical instruments including a professional synthesizer, all types of guitars, drums, launchpad and many more.
+</p>
+
+  <p style="padding-left:30%; padding-right: 30%; font-family: 'Montserrat'; font-style: italic;">
+
+</p></center>
+</div>
+
+<script>
+  var dropdown = document.getElementById("dropdown");
+  var dropbtn = document.getElementById("dropbtn");
+  var dropdownisup = true;
+  function dropdowntoggle(){
+    if (dropdownisup) {
+      dropdown.style.display = "flex";
+      dropbtn.style.backgroundColor = "#ddd";
+      dropbtn.style.color = "black";
+      dropdownisup = false;
+    }
+
+    else{
+      dropdown.style.display = "none";
+      dropbtn.style.backgroundColor = "rgba(51,51,51,0)";
+      dropbtn.style.color = "#f2f2f2";
+      dropdownisup = true;
+    }
+    
+  }
+</script>
+
+</body>
+</html>

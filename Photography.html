@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
+<link href="subpages_style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      $(".loader").fadeOut("slow"); });
+  </script>
+
+</head>
+<body>
+<div class="loader">
+  <div class="lds-css ng-scope">
+    <div style="width:100%;height:100%" class="lds-eclipse">
+      <div>
+      </div>
+      <img src="img/originals.png"  style=" width: 65%; padding: 8%;">
+    </div>
+    <style type="text/css">
+    </style>
+  </div>
+</div>
+
+<div style="width: 100%;position: relative;">
+<video autoplay muted loop id="myVideo">
+  <source src="vid/photography.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div class="wrapper">
+</div>
+</div>
+
+
+<div class="topnavcontainer">
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered" >
+    <a href="." class="active">IIT Goa &#8729 <b>CULTURALS</b></a>
+  </div>
+
+  <!-- Left-aligned links (default) -->
+
+  <a href="#" onclick="dropdowntoggle()" id="dropbtn">CLUBS  &#9780</a>
+  <a href="../st">COUNCILS</a>
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="#search">FACILITIES</a>
+    <a href="../su">CONTACTUS</a>
+  </div>
+</div>
+
+</div>
+
+
+<div id="dropdown">
+
+  <!-- Left-aligned links (default) -->
+
+  <a href="Music.html">Music Club</a>
+  <a href="Dance.html">Dance Club</a>
+  <a href="Photography.html">Photography Club</a>
+  <a href="#">Literary Club</a>
+  <a href="Dramatics.html">Dramatics Club</a>
+  <a href="Debate.html">Debate Club</a>
+  <a href="#">Detective Club</a>
+
+</div>
+
+
+<center>
+<div class="clubname">
+  Photography Club
+</div>
+</center>
+
+<div class="content"><center>
+  <div style="background-color: rgba(0,0,0,0); width: 85%; ">
+  <h1 style="font-family: 'Kaushan Script'"><img src="img/originals.png" width='64px' height="64px" align="center" style="margin-right: 20px;" >Originals IIT Goa</h1>
+  <p style="width:80%;background-color: rgba(0,0,0,0) ;font-family: 'Montserrat'; font-weight: 500;">The photography Club of IIT Goa, aptly titled "Originals", is one of the most active clubs on campus. The club is equipped with professional cameras, camcorder, tripods, stabilizers and what not...<br>It captures all the golden moments and shares it with the entire IIT Goa Community. Various workshops and events are conducted to train and encourage interested students to develop their photography skills. They also cover all social platforms ranging from FB to Insta.</p>
+
+
+</center>
+</div>
+</div>
+
+<script>
+  var dropdown = document.getElementById("dropdown");
+  var dropbtn = document.getElementById("dropbtn");
+  var dropdownisup = true;
+  function dropdowntoggle(){
+    if (dropdownisup) {
+      dropdown.style.display = "flex";
+      dropbtn.style.backgroundColor = "#ddd";
+      dropbtn.style.color = "black";
+      dropdownisup = false;
+    }
+
+    else{
+      dropdown.style.display = "none";
+      dropbtn.style.backgroundColor = "rgba(51,51,51,0)";
+      dropbtn.style.color = "#f2f2f2";
+      dropdownisup = true;
+    }
+    
+  }
+</script>
+
+
+</body>
+</html>

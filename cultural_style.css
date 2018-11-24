@@ -1,0 +1,285 @@
+body{
+  margin:0px;
+  overflow: hidden;
+}
+.big{
+
+      height: 100%; 
+      /* Center and scale the image nicely */
+      /*background-attachment: fixed;*/
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.slide{
+      height: 100%; 
+      /* Center and scale the image nicely */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.text_container{
+      position: absolute;
+      top:50%;
+      left:50%;
+      font-family: "Montserrat";
+      font-weight: 300;
+      font-size: 250%;
+      color : white;
+}
+
+.clubname{
+    position: absolute;
+    top: 10%;
+    width:100%;
+    text-align:center;
+    font-size:400%;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+
+
+}
+
+.button_container{
+      position: absolute;
+      top: 25%;
+      left: 45%;
+       cursor: pointer;
+      text-align: center;
+      font-family: "Lato";
+      color : brown;
+      font-size: 80%;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.6);  
+      border-radius: 25px;
+}
+
+.Eventspane{
+     background-color:rgba(0,0,0,0.25);
+
+      /* Full height */
+      width:25%;
+      height:40%;
+
+      position: absolute;
+      top:50%;
+      left:10%;
+      
+      color :white;
+      overflow: hidden;
+      font-family: "Lato";
+      font-size: 100%;
+      /* Center and scale the image nicely */
+      /*background-attachment: fixed;*/
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;}
+
+.Eventspane ul li{
+  float:center;
+  width:100%;
+  font-family: "Lato";
+  list-style-type: none;
+
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+
+.parallax{
+  background-image: url("img/1-layer.png");
+        height: 100%; 
+      /* Center and scale the image nicely */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+     font-family: "Montserrat";
+     font-weight: 500;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #bdc3c7;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4sw
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #c0392b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.right_button {
+
+      position: absolute;
+      top: 50%;
+      right: 2%;
+      cursor: pointer;
+      text-align: center;
+      font-family: "Lato";
+      color : rgba(0,0,0,1);
+      font-size: 30px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.5);  
+      border-radius: 25px;
+
+
+}
+
+
+.left_button{
+
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      cursor: pointer;
+      text-align: center;
+      font-family: "Lato";
+      color : rgba(0,0,0,1);
+      font-size: 30px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.5);  
+      border-radius: 25px;
+}
+
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+
+.eventstable {
+  font-size: 100%; 
+  color: white; 
+  text-transform: uppercase;
+  text-align: center;
+  border-collapse:collapse;
+  width: 80%;
+  font-weight: 300;
+  
+}
+td {
+    height: 50px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+@keyframes lds-eclipse {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes lds-eclipse {
+      0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    .lds-eclipse {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+    }
+    .lds-eclipse div {
+      position: absolute;
+      -webkit-animation: lds-eclipse 1s linear infinite;
+      animation: lds-eclipse 1s linear infinite;
+      width: 160px;
+      height: 160px;
+   
+      border-radius: 50%;
+      box-shadow: 0 4px 0 0 #01006a;
+      -webkit-transform-origin: 80px 82px;
+      transform-origin: 80px 82px;
+    }
+    .lds-eclipse {
+      width: 200px !important;
+      height: 200px !important;
+      -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+      transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+    }
